@@ -1,0 +1,37 @@
+$Mobile: 375px;
+$Tablet: 992px;
+$Desktop: 1440px;
+
+@import './utils/color';
+@import './utils/typography';
+@import './box';
+@import './left';
+@import './right';
+@import './footer';
+
+
+@mixin reset() {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0;
+}
+*{
+  @include reset()
+}
+
+
+body{
+  font-family: $font-family;
+}
+
+.btn{
+  background-color: $primary-green-color;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .3s;
+  cursor: pointer;
+  &:hover{
+    background-color: lighten($color: $primary-green-color, $amount: 15)
+  }
+}
