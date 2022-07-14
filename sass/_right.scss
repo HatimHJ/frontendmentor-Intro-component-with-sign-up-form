@@ -1,7 +1,7 @@
 .right{
-  flex-grow: 2;
-  // margin-left: 1rem;
-  h5{
+  flex-grow: 1;
+  padding: 2rem;
+  h2{
     background-color: $purple;
     padding: 1.2rem;
     text-align: center;
@@ -14,8 +14,8 @@
     line-height: 1.8;
   }
   form{
-    background: $white;
-    padding: 1rem;
+    background: #fff;
+    padding:2rem;
     width: 100%;    
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

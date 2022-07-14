@@ -1,4 +1,32 @@
 footer{
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: $neutral-dark-blue-color;
+  color: $white;
+  padding: 1rem;
+  border-radius: 15px;
+  clip-path: circle(6.5% at 6.6% 41.68%);
+  transition: all .3s;
+  a{
+    color: $primary-red-color;
+    text-decoration: none;
+  }
+  &:hover{
+  clip-path: circle(100% );
+  background-color: $accent-blue-color;
+
+  }
+  @media (max-width:$Tablet) {
+    top: auto;
+    left: auto;
+    border-radius: 0;
+    bottom: auto;
+    position: relative;
+    clip-path: circle(100% );
+    &:hover{
+    background-color: $neutral-dark-blue-color;
+  
+    }
+  }
 }

@@ -30,6 +30,8 @@ body{
   text-align: center;
   text-transform: uppercase;
   transition: all .3s;
+  font-size: 1rem;
+  margin-bottom: 1rem;
   cursor: pointer;
   &:hover{
     background-color: lighten($color: $primary-green-color, $amount: 15)

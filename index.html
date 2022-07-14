@@ -24,7 +24,7 @@
     <title>Intro component with sign up form</title>
   </head>
   <body>
-    <section class="box">
+    <div class="box">
       <article class="left">
         <h2>
           Learn to code by <br />
@@ -37,12 +37,12 @@
         </p>
       </article>
       <article class="right">
-        <h5>
+        <h2>
           Try it free 7 days<span class="font-400">
             then $20/mo. thereafter</span
           >
-        </h5>
-        <form action="">
+        </h2>
+        <form>
           <div class="input-container" id="fname">
             <div class="input-icon">
               <input
@@ -71,16 +71,9 @@
               <input
                 type="email"
                 id="email"
-                placeholder="Email"
+                placeholder="Email Address"
                 data-field="Email"
               />
-              <i class="ri-error-warning-fill"></i>
-            </div>
-            <span class="error-message"></span>
-          </div>
-          <div class="input-container" id="address">
-            <div class="input-icon">
-              <input type="text" placeholder="Address" data-field="Addresss" />
               <i class="ri-error-warning-fill"></i>
             </div>
             <span class="error-message"></span>
@@ -114,9 +107,15 @@
           </div>
         </form>
       </article>
-    </section>
+    </div>
     <footer>
-      <p>Challenge by Frontend Mentor. Coded by hatimHJ.</p>
+      <p class="attribution">
+        <i class="ri-copyright-line ri-2x"></i>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/HatimHJ">hatimHJ</a>.
+      </p>
     </footer>
     <script src="./js/main.js"></script>
   </body>
